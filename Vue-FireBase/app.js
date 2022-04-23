@@ -9,8 +9,10 @@ const app = Vue.createApp({
 
     },
     methods : {
-        changeTitle() {
-            this.title = 'Words of Radiance'
+        changeTitle(titles) {
+            //this.title = 'Words of Radiance'
+            this.title = titles
+
         }
     }
 })
