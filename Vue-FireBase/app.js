@@ -7,6 +7,11 @@ const app = Vue.createApp({
             age : 45
         }
 
+    },
+    methods : {
+        changeTitle() {
+            this.title = 'Words of Radiance'
+        }
     }
 })
 
