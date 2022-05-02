@@ -2,6 +2,7 @@ const app = Vue.createApp({
     //data,functions
     data() {
         return {
+            url : 'http://www.thenetninja.co.uk',
             showBooks : true,
             books :[
                 {title : 'Name of the wind', author: 'Patrick Rothfuss'},

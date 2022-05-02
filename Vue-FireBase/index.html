@@ -19,6 +19,9 @@
 <body>
    <h1>Hello Vue !!!</h1> 
    <div id="app">
+       <!--Attribute Binding-->
+       <a v-bind:href="url">Best Website Ever</a>
+
        <div v-if="showBooks">
             <ul>
                 <li v-for="book in books">
