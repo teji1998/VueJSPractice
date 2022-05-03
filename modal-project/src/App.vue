@@ -1,9 +1,11 @@
 <template>
   <h1>{{title}}</h1>
+  <input type="text" ref="name">
+  <button @click="handleClick">Click me</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
@@ -11,7 +13,13 @@ export default {
     return {
       title : 'Welcome to my first Vue App !!!'
     }
-    
+  },
+  methods: {
+    handleClick(){
+      console.log(this.$refd.name)
+      this.$refs.name.classList.add('active')
+      this.$refs.name.focus()
+    }
   }
 }
 </script>
